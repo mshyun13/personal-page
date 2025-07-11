@@ -10,14 +10,19 @@ function Introduction() {
   const greeting = useRef()
 
   useGSAP(() => {
-    const split = SplitText.create(".text", {type: 'words'})
+    const split = SplitText.create(".text", {type: 'chars, words, lines'})
 
-    gsap.from(split.words, {
-      duration: 1,
-      y: 100,
-      autoAlpha: 0,
-      stagger: 0.05,
-      ease: 'none'
+    gsap.from(split.chars, {
+      // duration: 1,
+      // y: 100,
+      // autoAlpha: 0,
+      // stagger: 0.05,
+
+      x: 150,
+      opacity: 0,
+      duration: 0.7,
+      ease: "power4",
+      stagger: 0.04,
     })
   })
 
