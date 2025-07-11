@@ -27,7 +27,9 @@
     ]
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "express": "^4.17.2",
+    "gsap": "^3.13.0",
     "knex": "^2.5.1",
     "sqlite3": "^5.1.6",
     "superagent": "^10.2.1"
