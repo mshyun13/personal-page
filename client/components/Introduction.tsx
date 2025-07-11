@@ -1,7 +1,29 @@
+import gsap from "gsap"
+import { useGSAP } from '@gsap/react';
+import { useRef } from "react";
+import { SplitText } from 'gsap/all';
+
+gsap.registerPlugin(useGSAP)
+gsap.registerPlugin(SplitText) 
+
 function Introduction() {
+  const greeting = useRef()
+
+  useGSAP(() => {
+    const split = SplitText.create(".text", {type: 'words'})
+
+    gsap.from(split.words, {
+      duration: 1,
+      y: 100,
+      autoAlpha: 0,
+      stagger: 0.05,
+      ease: 'none'
+    })
+  })
+
   return (
     <>
-      <div>
+      <div ref={greeting} className="text">
         <h2>Hello I'm Seunghyun and I'm full stack web developer.</h2>
       </div>
       <div>
