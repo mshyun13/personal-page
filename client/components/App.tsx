@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="app">
-        <h1>Personal Page</h1>
+        {/* <h1>Personal Page</h1> */}
         {/* <ul>{data && data.map((fruit) => <li key={fruit}>{fruit}</li>)}</ul> */}
       </div>
       <Introduction />
