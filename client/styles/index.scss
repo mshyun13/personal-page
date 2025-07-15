@@ -30,6 +30,35 @@ body {
   // background-color: #CBD0D8;
 }
 
+.num {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 2vw;
+  line-height: 1;
+}
+
+#section1 .welcome {
+  font-size: 5vw;
+}
+
+#section2 .greeting_text {
+  font-size: 2vw;
+}
+
+#section3 .vision_text {
+  font-size: 2vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  padding: 3vh;
+  text-align: center;
+  background-color: white;
+}
+
+
 // .greeting {
 //   display: flex;
 //   justify-content: center;
