@@ -2,7 +2,7 @@
 
 ## About this project
 
-Hi, I'm Seunghyun Min, and this is my personal project for my portfolio. I used GSAP library to add various animation. This portfolio includes different projects which had been completed along with breif explaination about each projects. It also includes short introduction of myself, and information about myself. 
+Hi, I'm Seunghyun. This is a personal portfolio project showcasing some of the work I've done. I used the GSAP library to add various animations throughout the site. The portfolio includes several projects I've completed, each with a breif explanation. You will also find a short introduction and some background information about me.
 
 ### Installation
 
