@@ -14,8 +14,8 @@ function Introduction() {
 
   useGSAP(() => {
     const greetingSplit = SplitText.create("#section2 .greeting_text", {type: 'chars, words, lines'})
-    // const visionSplit = SplitText.create("#section3 .vision", {type: 'chars, words, lines'})
 
+    // welcome animation
     const ani1 = gsap.timeline()
     ani1.to('#section1 .welcome', {scale: 60, duration: 2, autoAlpha: 0})
 
@@ -27,11 +27,12 @@ function Introduction() {
       scrub: true,
       pin: true,
       anticipatePin: 1,
-      markers: true
+      // markers: true
     })
     
-    // const ani2 = gsap.timeline()
-    const ani2 = gsap.from(greetingSplit.chars, {
+    // greeting animation
+    const ani2 = gsap.timeline()
+    ani2.from(greetingSplit.chars, {
       x: 150,
       autoAlpha: 0,
       duration: 0.7,
@@ -50,23 +51,11 @@ function Introduction() {
       // markers: true
     })
 
+    // vision animation
     const ani3 = gsap.timeline()
     ani3.from('#section3 .t1', {autoAlpha: 0, duration: 1, y: 50}, "+=1")
     .from('#section3 .t2', {autoAlpha: 0, duration: 1, y: 50}, "+=1")
     .from('#section3 .t3', {autoAlpha: 0, duration: 1, y: 50}, "+=1")
-
-    // const ani3 = gsap.timeline()
-    // ani3.from(visionSplit.words, {
-    //   autoAlpha: 0,
-    //   duration: 1,
-    //   y: 50
-
-      // yPercent: 100,
-      // autoAlpha: 0,
-      // duration: 0.7,
-      // ease: 'circ.out',
-      // stagger: 0.01,
-    // })
 
     ScrollTrigger.create({
       animation: ani3,
@@ -77,44 +66,19 @@ function Introduction() {
       scrub: true,
       // markers: true,
     })
-
-    // gsap.from(greetingSplit.chars, {
-    //   x: 150,
-    //   opacity: 0,
-    //   duration: 0.7,
-    //   ease: "power4",
-    //   stagger: 0.04,
-    // })
-
-    // gsap.from(visionSplit.words, {
-    //   yPercent: 100,
-    //   autoAlpha: 0,
-    //   duration: 2,
-    //   ease: "circ.out",
-    //   stagger: 0.01,
-
-    //   // scrollTrigger: {
-    //   //   trigger: ".vision",
-    //   //   pin: true,
-    //   //   start: "top center",
-    //   //   end: "bottom center",
-    //   //   markers: true,
-    //   //   scrub: 1,
-    //   // }
-    // })
   })
 
   return (
     <>
-      <section id="section1" className="grey">
+      <section id="section1" className="navy">
         <h2 className="welcome">Welcome!</h2>
         <span className="num">01</span>
       </section>
-      <section ref={greeting} id="section2" className="blue greeting">
-        <h2 className="greeting_text">Hello I'm Seunghyun and I'm full stack web developer.</h2>
+      <section ref={greeting} id="section2" className="grey greeting">
+        <h2 className="greeting_text">{`Hello I'm Seunghyun and I'm full stack web developer.`}</h2>
         <span className="num">02</span>
       </section>
-      <section ref={vision} id="section3" className="grey vision">
+      <section ref={vision} id="section3" className="navy vision">
         <p className="vision_text t1">Share my learnings and grow together.✈</p>
         <p className="vision_text t2">I love to share my knowledge and grow up with team members.</p>
         <p className="vision_text t3">Majored Computer Science and Information System, and graduated Dev Academy full stack developer course.</p>
