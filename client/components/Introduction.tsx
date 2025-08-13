@@ -3,6 +3,7 @@ import { useGSAP } from '@gsap/react';
 import { useRef } from "react";
 import { SplitText } from 'gsap/all';
 import { ScrollTrigger } from "gsap/all";
+import Projects from "./Projects";
 
 gsap.registerPlugin(useGSAP)
 gsap.registerPlugin(SplitText) 
@@ -84,6 +85,7 @@ function Introduction() {
         <p className="vision_text t3">Majored Computer Science and Information System, and graduated Dev Academy full stack developer course.</p>
         <span className="num">03</span>
       </section>
+      <Projects />
     </>
   )
 }
