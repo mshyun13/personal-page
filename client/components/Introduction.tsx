@@ -11,20 +11,38 @@ gsap.registerPlugin(ScrollTrigger)
 
 function Introduction() {
 
+  useGSAP(() => {
+    gsap.fromTo('.textBox .mask span', {
+      'background-size': '0%, 100%'
+    }, {
+      'background-size': '100%, 100%',
+      scrollTrigger: {
+        trigger: '.introWrapper .textBox',
+        pinnedContainer: '.introWrapper .textBox',
+        start: '0%, 50%',
+        end: '100%, 50%',
+        markers: true,
+        scrub: 1
+      }
+    })
+  })
+
   return ( 
     <>
-      <div className="titleBox">
-        <span className="text">
-          Min Seunghyun
-        </span>
-      </div>
-      <div className="textBox">
-        <span className="mask">
+      <div className="introWrapper">
+        <div className="titleBox">
           <span className="text">
-            {`I'm Seunghyun, a full-stack web developer driven by a growth mindset and a passion for problem-solving.`}<br />
-            {`With analytical thinking and strong communication skills, I'm excited to take on new challenges in the tech industry, combining technical expertise with collaboration to build meaningful solutions.`} <br />
+            Min Seunghyun
           </span>
-        </span>
+        </div>
+        <div className="textBox">
+          <span className="mask">
+            <span className="text">
+              {`I'm Seunghyun, a full-stack web developer driven by a growth mindset and a passion for problem-solving.`}<br />
+              {`With analytical thinking and strong communication skills, I'm excited to take on new challenges in the tech industry, combining technical expertise with collaboration to build meaningful solutions.`} <br />
+            </span>
+          </span>
+        </div>
       </div>
     </>
   )
