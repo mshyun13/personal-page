@@ -5,6 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   padding: 0%;
   margin: 0%;
+  background: black;
 }
 
 // introduction title text
@@ -14,16 +15,31 @@ body {
   font-family: 'Bebas Neue', serif;
 }
 
+.titleBox .text {
+  color: white;
+}
+
 // introduction body text
 
 .textBox {
   font-size: 48px;
   font-family: 'Bebas Neue', serif;
   line-height: 1.2;
+  margin: 2000px 0 2000px;
 }
 
 .textBox .mask {
   display: block;
+}
+
+.textBox .mask .text{
+  -webkit-text-fill-color: rgba(255,255,255,0.2);
+  // let background clip limits only text area so it won't exceed the text area
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(white, white);
+  // let width of background to be 0% and height to be 100% 
+  background-size: 0% 100%;
 }
 
 // .navy {
