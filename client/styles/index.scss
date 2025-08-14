@@ -7,7 +7,24 @@ body {
   margin: 0%;
 }
 
+// introduction title text
 
+.titleBox {
+  font-size: 96px;
+  font-family: 'Bebas Neue', serif;
+}
+
+// introduction body text
+
+.textBox {
+  font-size: 48px;
+  font-family: 'Bebas Neue', serif;
+  line-height: 1.2;
+}
+
+.textBox .mask {
+  display: block;
+}
 
 // .navy {
 //   display: flex;
