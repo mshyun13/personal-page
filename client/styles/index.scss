@@ -13,8 +13,9 @@ body {
 .introWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
-  margin: 500px 0 500px;
+  justify-content: center;
+  height: 100vh;
+  margin-bottom:  500px;
 }
 
 // introduction title text
