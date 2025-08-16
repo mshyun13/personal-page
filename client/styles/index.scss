@@ -5,56 +5,100 @@ body {
   font-family: 'Montserrat', sans-serif;
   padding: 0%;
   margin: 0%;
+  background: black;
 }
 
-.navy {
+// introduction wrapper
+
+.introWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh;
-  background-color: #333D51;
-  color: #F4F3EA;
+  margin-bottom:  500px;
 }
 
-.grey {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #CBD0D8;
+// introduction title text
+
+.titleBox {
+  font-size: 96px;
+  font-family: 'Bebas Neue', serif;
 }
 
-.num {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  font-size: 2vw;
-  line-height: 1;
+.titleBox .text {
+  color: white;
 }
 
-#section1 .welcome {
-  font-size: 5vw;
+// introduction body text
+
+.textBox {
+  font-size: 48px;
+  font-family: 'Bebas Neue', serif;
+  line-height: 1.2;
 }
 
-#section2 .greeting_text {
-  font-size: 2vw;
+.textBox .mask {
+  display: block;
 }
 
-#section3 .vision_text {
-  font-size: 2vw;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80vw;
-  padding: 3vh;
-  text-align: center;
-  background-color: #333D51;
+.textBox .mask .text{
+  -webkit-text-fill-color: rgba(255,255,255,0.2);
+  // let background clip limits only text area so it won't exceed the text area
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(white, white);
+  // let width of background to be 0% and height to be 100% 
+  background-size: 0% 100%;
 }
 
-.text h2 {
-  text-align: center;
-  vertical-align: middle;
-}
+// .navy {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #333D51;
+//   color: #F4F3EA;
+// }
+
+// .grey {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background-color: #CBD0D8;
+// }
+
+// .num {
+//   position: absolute;
+//   left: 20px;
+//   bottom: 20px;
+//   font-size: 2vw;
+//   line-height: 1;
+// }
+
+// #section1 .welcome {
+//   font-size: 5vw;
+// }
+
+// #section2 .greeting_text {
+//   font-size: 2vw;
+// }
+
+// #section3 .vision_text {
+//   font-size: 2vw;
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 80vw;
+//   padding: 3vh;
+//   text-align: center;
+//   background-color: #333D51;
+// }
+
+// .text h2 {
+//   text-align: center;
+//   vertical-align: middle;
+// }
