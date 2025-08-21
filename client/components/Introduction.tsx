@@ -19,8 +19,8 @@ function Introduction() {
       scrollTrigger: {
         trigger: '.introWrapper .textBox',
         pinnedContainer: '.introWrapper .textBox',
-        start: '20%, 50%',
-        end: '100%, 50%',
+        start: '0%, 30%',
+        end: '100%, 40%',
         markers: true,
         scrub: 1
       }
