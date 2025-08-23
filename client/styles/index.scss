@@ -54,8 +54,41 @@ body {
 // projects wrap
 
 .wrap {
-  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  background: #141212;
 }
+
+.container {
+  padding: 500px 0 1000px;
+}
+
+.container .inner {
+  padding: 0 50px;
+  box-sizing: border-box;
+  color: white;
+}
+
+// projects page title
+
+.container .inner .mainTextBox .pageTitle {
+  font-size: 48px;
+  font-family: 'Bebas Neue';
+  margin-bottom: 20px;
+}
+
+.container .inner .mainTextBox .pageSubtitle {
+  font-family: 'Bebas Neue';
+  color: #b4b4b4;
+  margin-bottom: 50px;
+}
+
+// projects list
+
+.container .inner .projectList {
+  perspective: 900px;
+}
+
 
 // .navy {
 //   display: flex;
