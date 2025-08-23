@@ -22,8 +22,42 @@ function Projects() {
                 <div className="bottomBox">
                   <p className="num">1</p>
                   <div className="descriptionBox">
-                    <p className="projectDescription1">Project description 1</p>
-                    <p className="projectDescription2">Project description 2</p>
+                    <p className="projectDescription1">Project A description 1</p>
+                    <p className="projectDescription2">Project A description 2</p>
+                  </div>
+                </div>
+              </li>
+              <li className="project b">
+                <div className="topBox">
+                  <h3 className="projectTitle">Project 2</h3>
+                  {/* <ul className="icon">
+                    <li><a href="#"><img src="images/icon1" alt=""></img></a></li>
+                    <li><a href="#"><img src="images/icon2" alt=""></img></a></li>
+                    <li><a href="#"><img src="images/icon3" alt=""></img></a></li>
+                  </ul> */}
+                </div>
+                <div className="bottomBox">
+                  <p className="num">2</p>
+                  <div className="descriptionBox">
+                    <p className="projectDescription1">Project B description 1</p>
+                    <p className="projectDescription2">Project B description 2</p>
+                  </div>
+                </div>
+              </li>
+              <li className="project c">
+                <div className="topBox">
+                  <h3 className="projectTitle">Project 3</h3>
+                  {/* <ul className="icon">
+                    <li><a href="#"><img src="images/icon1" alt=""></img></a></li>
+                    <li><a href="#"><img src="images/icon2" alt=""></img></a></li>
+                    <li><a href="#"><img src="images/icon3" alt=""></img></a></li>
+                  </ul> */}
+                </div>
+                <div className="bottomBox">
+                  <p className="num">3</p>
+                  <div className="descriptionBox">
+                    <p className="projectDescription1">Project C description 1</p>
+                    <p className="projectDescription2">Project C description 2</p>
                   </div>
                 </div>
               </li>
