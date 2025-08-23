@@ -15,7 +15,6 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  margin-bottom: 500px;
 }
 
 // introduction title text
@@ -123,6 +122,52 @@ body {
 .container .inner .projectList .project .topBox ul.icons li img {
   width: 100%;
 }
+
+.container .inner .projectList .project .bottomBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .inner .projectList .project .bottomBox .num {
+  font-size: 300px;
+  font-weight: 600px;
+  margin: 0;
+}
+
+.container .inner .projectList .project.a .bottomBox .num {
+  color: #ff764a;
+}
+
+.container .inner .projectList .project.b .bottomBox .num {
+  color: #aaa8ef;
+}
+
+.container .inner .projectList .project.c .bottomBox .num {
+  color: #ffb84f;
+}
+
+.container .inner .projectList .project .bottomBox .descriptionBox {
+  width: 40%;
+  padding-top: 100px;
+}
+
+.container .inner .projectList .project .bottomBox .descriptionBox .projectDescription1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #353535;
+  margin-bottom: 30px;
+}
+
+.container .inner .projectList .project .bottomBox .descriptionBox .projectDescription2 {
+  color: #646464;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
 
 // .navy {
 //   display: flex;
