@@ -93,6 +93,10 @@ body {
   margin-bottom: 50px;
   border-radius: 10px;
   padding: 30px 50px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  filter: brightness(1);
 }
 
 .container .inner .projectList .project .topBox {
