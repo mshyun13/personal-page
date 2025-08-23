@@ -43,6 +43,7 @@ function Introduction() {
             </span>
           </span>
         </div>
+        <Projects />
       </div>
     </>
   )
