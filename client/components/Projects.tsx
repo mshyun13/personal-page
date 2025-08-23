@@ -13,6 +13,11 @@ function Projects() {
               <li className="project a">
                 <div className="topBox">
                   <h3 className="projectTitle">Project 1</h3>
+                  <ul className="icons">
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></li>
+                  </ul>
                   {/* <ul className="icon">
                     <li><a href="#"><img src="images/icon1" alt=""></img></a></li>
                     <li><a href="#"><img src="images/icon2" alt=""></img></a></li>
@@ -30,6 +35,11 @@ function Projects() {
               <li className="project b">
                 <div className="topBox">
                   <h3 className="projectTitle">Project 2</h3>
+                  <ul className="icons">
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></li>
+                  </ul>
                   {/* <ul className="icon">
                     <li><a href="#"><img src="images/icon1" alt=""></img></a></li>
                     <li><a href="#"><img src="images/icon2" alt=""></img></a></li>
@@ -47,6 +57,11 @@ function Projects() {
               <li className="project c">
                 <div className="topBox">
                   <h3 className="projectTitle">Project 3</h3>
+                  <ul className="icons">
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></li>
+                  </ul>
                   {/* <ul className="icon">
                     <li><a href="#"><img src="images/icon1" alt=""></img></a></li>
                     <li><a href="#"><img src="images/icon2" alt=""></img></a></li>
