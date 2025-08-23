@@ -20,12 +20,12 @@ body {
 
 // introduction title text
 
-.titleBox {
+.introTitleBox {
   font-size: 96px;
   font-family: 'Bebas Neue', serif;
 }
 
-.titleBox .text {
+.introTitleBox .text {
   color: white;
 }
 
@@ -49,6 +49,12 @@ body {
   background-image: linear-gradient(white, white);
   // let width of background to be 0% and height to be 100% 
   background-size: 0% 100%;
+}
+
+// projects wrap
+
+.wrap {
+  background-color: white;
 }
 
 // .navy {

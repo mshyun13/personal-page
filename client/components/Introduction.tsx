@@ -1,9 +1,9 @@
 import gsap from "gsap"
 import { useGSAP } from '@gsap/react';
-import { useRef } from "react";
+// import { useRef } from "react";
 import { SplitText } from 'gsap/all';
 import { ScrollTrigger } from "gsap/all";
-import Projects from "./Projects";
+// import Projects from "./Projects";
 
 gsap.registerPlugin(useGSAP)
 gsap.registerPlugin(SplitText) 
@@ -30,7 +30,7 @@ function Introduction() {
   return ( 
     <>
       <div className="introWrapper">
-        <div className="titleBox">
+        <div className="introTitleBox">
           <span className="text">
             Min Seunghyun
           </span>
@@ -43,7 +43,6 @@ function Introduction() {
             </span>
           </span>
         </div>
-        <Projects />
       </div>
     </>
   )
