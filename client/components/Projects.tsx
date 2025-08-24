@@ -1,5 +1,32 @@
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import { ScrollTrigger } from "gsap/all"
+
+gsap.registerPlugin(useGSAP)
+gsap.registerPlugin(ScrollTrigger)
+
 function Projects() {
   
+  useGSAP(() => {
+    gsap.utils.toArray('.container .projectList .project').forEach((selector) => {
+      console.log(selector)
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: selector,
+          start: '0% 60%',
+          end: '0% 0%',
+          scrub: 1,
+          markers: true
+        }
+      })
+      .to(selector, {
+        transform: 'rotateX(-10deg) scale(0.9)',
+        transformOrigin: 'top',
+        filter: 'brightness(0.3)'
+      }, 0)
+    })
+  })
+
   return (
     <>
       <div className="wrap">
@@ -18,11 +45,6 @@ function Projects() {
                     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></li>
                     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></li>
                   </ul>
-                  {/* <ul className="icon">
-                    <li><a href="#"><img src="images/icon1" alt=""></img></a></li>
-                    <li><a href="#"><img src="images/icon2" alt=""></img></a></li>
-                    <li><a href="#"><img src="images/icon3" alt=""></img></a></li>
-                  </ul> */}
                 </div>
                 <div className="bottomBox">
                   <p className="num">1</p>
@@ -40,11 +62,6 @@ function Projects() {
                     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></li>
                     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></li>
                   </ul>
-                  {/* <ul className="icon">
-                    <li><a href="#"><img src="images/icon1" alt=""></img></a></li>
-                    <li><a href="#"><img src="images/icon2" alt=""></img></a></li>
-                    <li><a href="#"><img src="images/icon3" alt=""></img></a></li>
-                  </ul> */}
                 </div>
                 <div className="bottomBox">
                   <p className="num">2</p>
@@ -62,11 +79,6 @@ function Projects() {
                     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /></li>
                     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /></li>
                   </ul>
-                  {/* <ul className="icon">
-                    <li><a href="#"><img src="images/icon1" alt=""></img></a></li>
-                    <li><a href="#"><img src="images/icon2" alt=""></img></a></li>
-                    <li><a href="#"><img src="images/icon3" alt=""></img></a></li>
-                  </ul> */}
                 </div>
                 <div className="bottomBox">
                   <p className="num">3</p>
