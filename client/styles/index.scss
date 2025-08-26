@@ -193,19 +193,37 @@ body {
   flex-direction: column;
 }
 
-.githubIcon{
+.example .aboutMe {
+  font-size: 96px;
+  font-family: 'Bebas Neue', serif;
+}
+
+.example ul.exampleIcon {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.example ul.exampleIcon li {
+  margin-right: 20px;
+}
+
+.githubIcon {
   width: 40px;
   height: 40px;
   filter: brightness(0) invert(1);
 }
 
-.linkedinIcon{
+.linkedinIcon {
   width: 40px;
   height: 40px;
   filter: brightness(0) invert(1);
 }
 
-
+.githubIcon:hover, .linkedinIcon:hover {
+  transform: scale(1.2);
+}
 
 
 
