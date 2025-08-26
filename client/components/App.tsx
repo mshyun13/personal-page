@@ -1,5 +1,6 @@
 // import { useFruits } from '../hooks/useFruits.ts'
 
+import AboutMe from "./AboutMe"
 import Introduction from "./Introduction"
 import Projects from "./Projects"
 
@@ -14,6 +15,7 @@ function App() {
       {/* </div> */}
       <Introduction />
       <Projects />
+      <AboutMe />
     </>
   )
 }

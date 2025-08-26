@@ -59,7 +59,7 @@ body {
 }
 
 .container {
-  padding-bottom: 1000px;
+  // padding-bottom: 1000px;
 }
 
 .container .inner {
@@ -173,6 +173,25 @@ body {
 
 
 
+
+.example {
+  // background: white;
+  color: white;
+  font-family: 'Bebas Neue', serif;
+  font-size: 48px;
+  line-height: 1.2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/seunghyun\ -\ background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  
+  // text
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 
 
