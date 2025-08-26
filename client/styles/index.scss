@@ -15,17 +15,16 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  margin-bottom:  500px;
 }
 
 // introduction title text
 
-.titleBox {
+.introTitleBox {
   font-size: 96px;
   font-family: 'Bebas Neue', serif;
 }
 
-.titleBox .text {
+.introTitleBox .text {
   color: white;
 }
 
@@ -50,6 +49,129 @@ body {
   // let width of background to be 0% and height to be 100% 
   background-size: 0% 100%;
 }
+
+// projects wrap
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  background: black;
+}
+
+.container {
+  padding-bottom: 1000px;
+}
+
+.container .inner {
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+// projects page title
+
+.container .inner .mainTextBox .pageTitle {
+  font-size: 48px;
+  font-family: 'Bebas Neue';
+  margin-bottom: 20px;
+  color: white;
+}
+
+.container .inner .mainTextBox .pageSubtitle {
+  font-family: 'Bebas Neue';
+  color: #b4b4b4;
+  margin-bottom: 50px;
+}
+
+// projects list
+
+.container .inner .projectList {
+  perspective: 900px;
+}
+
+.container .inner .projectList .project {
+  background: white;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  padding: 30px 50px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  filter: brightness(1);
+}
+
+.container .inner .projectList .project .topBox {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #888;
+  padding-bottom: 20px;
+}
+
+.container .inner .projectList .project .topBox h3 {
+  font-size: 48px ;
+  margin: 0;
+}
+
+.container .inner .projectList .project .topBox ul.icons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.container .inner .projectList .project .topBox ul.icons li {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.container .inner .projectList .project .topBox ul.icons li img {
+  width: 100%;
+}
+
+.container .inner .projectList .project .bottomBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .inner .projectList .project .bottomBox .num {
+  font-size: 300px;
+  font-weight: 600px;
+  margin: 0;
+}
+
+.container .inner .projectList .project.a .bottomBox .num {
+  color: #ff764a;
+}
+
+.container .inner .projectList .project.b .bottomBox .num {
+  color: #aaa8ef;
+}
+
+.container .inner .projectList .project.c .bottomBox .num {
+  color: #ffb84f;
+}
+
+.container .inner .projectList .project .bottomBox .descriptionBox {
+  width: 40%;
+  padding-top: 100px;
+}
+
+.container .inner .projectList .project .bottomBox .descriptionBox .projectDescription1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #353535;
+  margin-bottom: 30px;
+}
+
+.container .inner .projectList .project .bottomBox .descriptionBox .projectDescription2 {
+  color: #646464;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
 
 // .navy {
 //   display: flex;
