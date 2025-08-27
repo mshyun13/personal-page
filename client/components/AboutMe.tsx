@@ -17,7 +17,7 @@ function AboutMe () {
         pinnedContainer: '.example .textBox',
         start: '0% 50%',
         end: '40% 50%',
-        markers: true,
+        // markers: true,
         scrub: 1
       }
     })
@@ -25,7 +25,7 @@ function AboutMe () {
 
   return (
     <>
-      <div className="example">
+      <div className="example" id="section3">
         <div>
           <span className="aboutMe">{`About me`}</span><br />
         </div>
@@ -45,6 +45,9 @@ function AboutMe () {
             <a href={`https://github.com/mshyun13`}>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="linkedinIcon" />
             </a>
+          </li>
+          <li className="resume">
+            <a href={"../../files/Resume - Seunghyun Min.pdf"} download={'Seunghyun Min Resume'}>Resume</a>
           </li>
         </ul>
       </div>
