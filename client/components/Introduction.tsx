@@ -1,12 +1,12 @@
 import gsap from "gsap"
 import { useGSAP } from '@gsap/react';
 // import { useRef } from "react";
-import { SplitText } from 'gsap/all';
+// import { SplitText } from 'gsap/all';
 import { ScrollTrigger } from "gsap/all";
 // import Projects from "./Projects";
 
 gsap.registerPlugin(useGSAP)
-gsap.registerPlugin(SplitText) 
+// gsap.registerPlugin(SplitText) 
 gsap.registerPlugin(ScrollTrigger)
 
 function Introduction() {
