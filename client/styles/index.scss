@@ -174,7 +174,7 @@ body {
 
 
 
-.example {
+.aboutMeWrapper {
   // background: white;
   color: white;
   font-family: 'Bebas Neue', serif;
@@ -194,13 +194,13 @@ body {
   flex-direction: column;
 }
 
-.example .aboutMe {
+.aboutMeWrapper .title {
   font-size: 96px;
   font-family: 'Bebas Neue', serif;
   color: white;
 }
 
-.example .mask .text {
+.aboutMeWrapper .mask .text {
   // display: flex;
   // flex-direction: column;
   // justify-content: center;
@@ -214,14 +214,14 @@ body {
   // line-height: 1.2;
 }
 
-.example ul.exampleIcon {
+.aboutMeWrapper ul.icons {
   list-style: none;
   display: flex;
   padding: 0;
   margin-left: 20px;
 }
 
-.example ul.exampleIcon li {
+.aboutMeWrapper ul.icons li {
   margin-right: 20px;
 }
 

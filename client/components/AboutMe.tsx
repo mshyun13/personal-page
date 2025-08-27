@@ -25,9 +25,9 @@ function AboutMe () {
 
   return (
     <>
-      <div className="example" id="section3">
+      <div className="aboutMeWrapper" id="section3">
         <div>
-          <span className="aboutMe">{`About me`}</span><br />
+          <span className="title">{`About me`}</span><br />
         </div>
         <div className="textBox">
           <span className="mask">
@@ -35,7 +35,7 @@ function AboutMe () {
             {`Moving into the tech industry has long been my ultimate goal, and combining the knowledge from my university studies with the hands-on learning at Dev Academy has strengthened my commitment to this path. With strong communication and human skills, I'm eager to take on new challenges in this field and to develop creative, collaborative solutions to complex problems.`}</span>
           </span>
         </div>
-        <ul className="exampleIcon">
+        <ul className="icons">
           <li className="githubIcon">
             <a href={'https://www.linkedin.com/in/seunghyun-min-b55325269/'}>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="github icon" />
