@@ -8,16 +8,16 @@ gsap.registerPlugin(ScrollTrigger)
 function AboutMe () {
 
   useGSAP(() => {
-    gsap.fromTo('.textBox .mask span', {
+    gsap.fromTo('.aboutMeWrapper .textBox .mask span', {
       'background-size': '0%, 100%'
     }, {
       'background-size': '100%, 100%',
       scrollTrigger: {
-        trigger: '.example .textBox',
-        pinnedContainer: '.example .textBox',
+        trigger: '.aboutMeWrapper .textBox',
+        pinnedContainer: '.aboutMeWrapper .textBox',
         start: '0% 50%',
         end: '40% 50%',
-        // markers: true,
+        markers: true,
         scrub: 1
       }
     })
@@ -25,7 +25,7 @@ function AboutMe () {
 
   return (
     <>
-      <div className="aboutMeWrapper" id="section3">
+      <div id="section3" className="aboutMeWrapper">
         <div>
           <span className="title">{`About me`}</span><br />
         </div>

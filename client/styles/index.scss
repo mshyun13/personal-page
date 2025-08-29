@@ -242,8 +242,39 @@ body {
 
 // Nav section
 
-.navWrapper a {
-  color: white
+.navWrapper {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+  background-color: rgba(48, 48, 48, 0.4);
+  border-radius: 50px;
+  padding: 15px 20px;
+}
+
+.navWrapper .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navWrapper .navbar a {
+  font-family: 'Bebas Neue', serif;
+  font-size: 24px;
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.navWrapper .navbar a.active {
+  background: #fff;
+  color: #000;
+  border-radius: 50px;
 }
 
 
