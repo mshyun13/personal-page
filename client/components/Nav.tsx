@@ -1,4 +1,4 @@
-// import { useRef } from "react"
+import { HashLink } from 'react-router-hash-link';
 
 function Nav() {
 
@@ -6,9 +6,9 @@ function Nav() {
     <>
       <div className="navWrapper">
         <ul className="navbar">
-          <li><a href="#section1" className="active">MIN SEUNGHYUN</a></li>
-          <li><a href="#section2">PROJECTS</a></li>
-          <li><a href="#section3">ABOUT ME</a></li>
+          <li><HashLink to="#section1" className="active">MIN SEUNGHYUN</HashLink></li>
+          <li><HashLink to="#section2">PROJECTS</HashLink></li>
+          <li><HashLink to="#section3">ABOUT ME</HashLink></li>
         </ul>
       </div>
     </>
