@@ -6,9 +6,9 @@ function Nav() {
     <>
       <div className="navWrapper">
         <ul className="navbar">
-          <li><HashLink to="#section1" className="active">MIN SEUNGHYUN</HashLink></li>
-          <li><HashLink to="#section2">PROJECTS</HashLink></li>
-          <li><HashLink to="#section3">ABOUT ME</HashLink></li>
+          <li><HashLink smooth to="#section1" className="active">MIN SEUNGHYUN</HashLink></li>
+          <li><HashLink smooth to="#section2">PROJECTS</HashLink></li>
+          <li><HashLink smooth to="#section3">ABOUT ME</HashLink></li>
         </ul>
       </div>
     </>
