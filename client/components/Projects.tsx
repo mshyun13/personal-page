@@ -29,7 +29,7 @@ function Projects() {
 
   return (
     <>
-      <div className="wrap">
+      <div id="section2" className="wrap">
         <section className="container">
           <div className="inner">
             <div className="mainTextBox">

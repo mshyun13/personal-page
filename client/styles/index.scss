@@ -171,11 +171,9 @@ body {
   margin-bottom: 15px;
 }
 
+// About me
 
-
-
-.example {
-  // background: white;
+.aboutMeWrapper {
   color: white;
   font-family: 'Bebas Neue', serif;
   font-size: 48px;
@@ -184,9 +182,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  // width: 100vw;
   height: 100vh;
-  // border-radius: 100px;
   
   // text
   display: flex;
@@ -194,34 +190,29 @@ body {
   flex-direction: column;
 }
 
-.example .aboutMe {
+.aboutMeWrapper .title {
   font-size: 96px;
   font-family: 'Bebas Neue', serif;
   color: white;
 }
 
-.example .mask .text {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
+.aboutMeWrapper .mask .text {
   -webkit-text-fill-color: rgba(255,255,255,0.2);
   background-clip: text;
   background-repeat: no-repeat;
   background-image: linear-gradient(white, white);
   background-size: 0% 100%;
-  // font-family: 'Bebas Neue', serif;
   font-size: 36px;
-  // line-height: 1.2;
 }
 
-.example ul.exampleIcon {
+.aboutMeWrapper ul.icons {
   list-style: none;
   display: flex;
   padding: 0;
   margin-left: 20px;
 }
 
-.example ul.exampleIcon li {
+.aboutMeWrapper ul.icons li {
   margin-right: 20px;
 }
 
@@ -230,10 +221,6 @@ body {
   height: 40px;
   filter: brightness(0) invert(1);
   transition: all 0.4s;
-}
-
-.githubIcon:hover, .linkedinIcon:hover, .resume:hover{
-  transform: scale(1.2);
 }
 
 .resume {
@@ -247,7 +234,47 @@ body {
   text-decoration: none;
   padding-top: 0;
   padding-left: 0;
+}
 
+.githubIcon:hover, .linkedinIcon:hover, .resume:hover{
+  transform: scale(1.2);
+}
+
+// Nav section
+
+.navWrapper {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+  background-color: rgba(48, 48, 48, 0.4);
+  border-radius: 50px;
+  padding: 15px 20px;
+}
+
+.navWrapper .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navWrapper .navbar a {
+  font-family: 'Bebas Neue', serif;
+  font-size: 24px;
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.navWrapper .navbar a:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 50px;
 }
 
 

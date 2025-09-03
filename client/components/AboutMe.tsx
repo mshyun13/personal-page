@@ -8,13 +8,13 @@ gsap.registerPlugin(ScrollTrigger)
 function AboutMe () {
 
   useGSAP(() => {
-    gsap.fromTo('.textBox .mask span', {
+    gsap.fromTo('.aboutMeWrapper .textBox .mask span', {
       'background-size': '0%, 100%'
     }, {
       'background-size': '100%, 100%',
       scrollTrigger: {
-        trigger: '.example .textBox',
-        pinnedContainer: '.example .textBox',
+        trigger: '.aboutMeWrapper .textBox',
+        pinnedContainer: '.aboutMeWrapper .textBox',
         start: '0% 50%',
         end: '40% 50%',
         // markers: true,
@@ -25,9 +25,9 @@ function AboutMe () {
 
   return (
     <>
-      <div className="example" id="section3">
+      <div id="section3" className="aboutMeWrapper">
         <div>
-          <span className="aboutMe">{`About me`}</span><br />
+          <span className="title">{`About me`}</span><br />
         </div>
         <div className="textBox">
           <span className="mask">
@@ -35,7 +35,7 @@ function AboutMe () {
             {`Moving into the tech industry has long been my ultimate goal, and combining the knowledge from my university studies with the hands-on learning at Dev Academy has strengthened my commitment to this path. With strong communication and human skills, I'm eager to take on new challenges in this field and to develop creative, collaborative solutions to complex problems.`}</span>
           </span>
         </div>
-        <ul className="exampleIcon">
+        <ul className="icons">
           <li className="githubIcon">
             <a href={'https://www.linkedin.com/in/seunghyun-min-b55325269/'}>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="github icon" />

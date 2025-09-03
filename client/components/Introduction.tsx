@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger)
 function Introduction() {
 
   useGSAP(() => {
-    gsap.fromTo('.textBox .mask span', {
+    gsap.fromTo('.introWrapper .textBox .mask span', {
       'background-size': '0%, 100%'
     }, {
       'background-size': '100%, 100%',
@@ -29,7 +29,7 @@ function Introduction() {
 
   return ( 
     <>
-      <div className="introWrapper">
+      <div id="section1" className="introWrapper">
         <div className="introTitleBox">
           <span className="text">
             Min Seunghyun
