@@ -21,7 +21,7 @@ function Introduction() {
         pinnedContainer: '.introWrapper .textBox',
         start: '0%, 45%',
         end: '100%, 45%',
-        markers: true,
+        // markers: true,
         scrub: 1
       }
     })

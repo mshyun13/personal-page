@@ -17,7 +17,7 @@ function AboutMe () {
         pinnedContainer: '.aboutMeWrapper .textBox',
         start: '0% 50%',
         end: '40% 50%',
-        markers: true,
+        // markers: true,
         scrub: 1
       }
     })

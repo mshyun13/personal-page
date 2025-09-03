@@ -271,7 +271,7 @@ body {
   line-height: 30px;
 }
 
-.navWrapper .navbar a.active {
+.navWrapper .navbar a:hover {
   background: #fff;
   color: #000;
   border-radius: 50px;
