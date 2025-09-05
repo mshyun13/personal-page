@@ -51,7 +51,7 @@ function Projects() {
                   <p className="num">1</p>
                   <div className="descriptionBox">
                     <p className="projectDescription1">Teacher led project from Dev Academy</p>
-                    <p className="projectDescription2">Project A description 2</p>
+                    <p className="projectDescription2">A social platform for pet users to create meowtivationals, browse the gallery, and connect with fellow cat enthusiasts</p>
                   </div>
                 </div>
               </li>
@@ -69,7 +69,7 @@ function Projects() {
                   <p className="num">2</p>
                   <div className="descriptionBox">
                     <p className="projectDescription1">Final Group project from Dev Academy</p>
-                    <p className="projectDescription2">Project B description 2</p>
+                    <p className="projectDescription2">An app that encourages physical activity, making fitness fun and keeping you motivated</p>
                   </div>
                 </div>
               </li>
@@ -87,7 +87,7 @@ function Projects() {
                   <p className="num">3</p>
                   <div className="descriptionBox">
                     <p className="projectDescription1">Personal project for my family business</p>
-                    <p className="projectDescription2">Project C description 2</p>
+                    <p className="projectDescription2">A website for HKM Construction LTD</p>
                   </div>
                 </div>
               </li>
