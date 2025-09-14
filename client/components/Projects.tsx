@@ -48,8 +48,8 @@ function Projects() {
                   </ul>
                 </div>
                 <div className="bottomBox">
-                  {/* <p className="num">1</p> */}
-                  <img src="../../images/meowtivation.png" alt="meowtivation preview"/>
+                  <p className="num">1</p>
+                  <img className="projectPicture" src="../../images/meowtivation.png" alt="meowtivation preview"/>
                   <div className="descriptionBox">
                     <p className="projectDescription1">Teacher led project from Dev Academy</p>
                     <p className="projectDescription2">A social platform for pet users to create meowtivationals, browse the gallery, and connect with fellow cat enthusiasts</p>
@@ -67,8 +67,8 @@ function Projects() {
                   </ul>
                 </div>
                 <div className="bottomBox">
-                  {/* <p className="num">2</p> */}
-                  <img src="../../images/fitnessquest.png" alt="fitnessquest preview"/>
+                  <p className="num">2</p>
+                  <img className="projectPicture" src="../../images/fitnessquest.png" alt="fitnessquest preview"/>
                   <div className="descriptionBox">
                     <p className="projectDescription1">Final Group project from Dev Academy</p>
                     <p className="projectDescription2">An app that encourages physical activity, making fitness fun and keeping you motivated</p>
@@ -77,7 +77,7 @@ function Projects() {
               </li>
               <li className="project c">
                 <div className="topBox">
-                  <h3 className="projectTitle">HKM Construction</h3>
+                  <h3 className="projectTitle">{`HKM Construction (In Progress)`}</h3>
                   <ul className="icons">
                     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="language icons"/></li>
                     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="language icons"/></li>

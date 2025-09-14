@@ -133,6 +133,12 @@ body {
   justify-content: space-between;
 }
 
+.container .inner .projectList .project .bottomBox .projectPicture {
+  width: 40%;
+  margin: 20px;
+  border-radius: 15px;
+}
+
 .container .inner .projectList .project .bottomBox .num {
   font-family: 'Bebas Neue';
   font-size: 300px;
