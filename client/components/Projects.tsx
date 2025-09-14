@@ -2,14 +2,14 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/all"
 
-gsap.registerPlugin(useGSAP)
+// gsap.registerPlugin(useGSAP)
 gsap.registerPlugin(ScrollTrigger)
 
 function Projects() {
   
   useGSAP(() => {
-    gsap.utils.toArray('.container .projectList .project').forEach((selector) => {
-      console.log(selector)
+    gsap.utils.toArray('.container .projectList .project').forEach((el) => {
+      const selector = el as HTMLElement
       gsap.timeline({
         scrollTrigger: {
           trigger: selector,
@@ -20,7 +20,9 @@ function Projects() {
         }
       })
       .to(selector, {
-        transform: 'rotateX(-10deg) scale(0.9)',
+        // transform: 'rotateX(-10deg) scale(0.9)',
+        rotateX: -10,
+        scale: 0.9,
         transformOrigin: 'top',
         filter: 'brightness(0.3)'
       }, 0)

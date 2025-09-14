@@ -2,16 +2,16 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/all"
 
-gsap.registerPlugin(useGSAP)
+// gsap.registerPlugin(useGSAP)
 gsap.registerPlugin(ScrollTrigger)
 
 function AboutMe () {
 
   useGSAP(() => {
     gsap.fromTo('.aboutMeWrapper .textBox .mask span', {
-      'background-size': '0%, 100%'
+      backgroundSize: '0%, 100%'
     }, {
-      'background-size': '100%, 100%',
+      backgroundSize: '100%, 100%',
       scrollTrigger: {
         trigger: '.aboutMeWrapper .textBox',
         pinnedContainer: '.aboutMeWrapper .textBox',
