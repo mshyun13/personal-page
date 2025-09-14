@@ -33,7 +33,7 @@ function Projects() {
         <section className="container">
           <div className="inner">
             <div className="mainTextBox">
-              <h2 className="pageTitle">Projects</h2>
+              <span className="pageTitle">Projects</span>
               <p className="pageSubtitle">List of projects</p>
             </div>
             <ul className="projectList">

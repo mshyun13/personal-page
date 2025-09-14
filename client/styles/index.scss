@@ -63,22 +63,24 @@ body {
 // }
 
 .container .inner {
-  padding: 0 50px;
+  padding: 0px 50px 0px 0px;
   box-sizing: border-box;
 }
 
 // projects page title
 
 .container .inner .mainTextBox .pageTitle {
-  font-size: 48px;
+  font-size: 96px;
   font-family: 'Bebas Neue';
   margin-bottom: 20px;
   color: white;
 }
 
 .container .inner .mainTextBox .pageSubtitle {
+  font-size: 36px;
   font-family: 'Bebas Neue';
   color: #b4b4b4;
+  margin: 0;
   margin-bottom: 50px;
 }
 
