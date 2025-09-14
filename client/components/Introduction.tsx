@@ -5,7 +5,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/all";
 // import Projects from "./Projects";
 
-gsap.registerPlugin(useGSAP)
+// gsap.registerPlugin(useGSAP)
 // gsap.registerPlugin(SplitText) 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -13,9 +13,9 @@ function Introduction() {
 
   useGSAP(() => {
     gsap.fromTo('.introWrapper .textBox .mask span', {
-      'background-size': '0%, 100%'
+      backgroundSize: '0%, 100%'
     }, {
-      'background-size': '100%, 100%',
+      backgroundSize: '100%, 100%',
       scrollTrigger: {
         trigger: '.introWrapper .textBox',
         pinnedContainer: '.introWrapper .textBox',
