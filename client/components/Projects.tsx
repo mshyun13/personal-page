@@ -33,7 +33,7 @@ function Projects() {
         <section className="container">
           <div className="inner">
             <div className="mainTextBox">
-              <h2 className="pageTitle">Projects</h2>
+              <span className="pageTitle">Projects</span>
               <p className="pageSubtitle">List of projects</p>
             </div>
             <ul className="projectList">
@@ -49,9 +49,10 @@ function Projects() {
                 </div>
                 <div className="bottomBox">
                   <p className="num">1</p>
+                  <img className="projectPicture" src="../../images/meowtivation.png" alt="meowtivation preview"/>
                   <div className="descriptionBox">
                     <p className="projectDescription1">Teacher led project from Dev Academy</p>
-                    <p className="projectDescription2">Project A description 2</p>
+                    <p className="projectDescription2">A social platform for pet users to create meowtivationals, browse the gallery, and connect with fellow cat enthusiasts</p>
                   </div>
                 </div>
               </li>
@@ -67,15 +68,16 @@ function Projects() {
                 </div>
                 <div className="bottomBox">
                   <p className="num">2</p>
+                  <img className="projectPicture" src="../../images/fitnessquest.png" alt="fitnessquest preview"/>
                   <div className="descriptionBox">
                     <p className="projectDescription1">Final Group project from Dev Academy</p>
-                    <p className="projectDescription2">Project B description 2</p>
+                    <p className="projectDescription2">An app that encourages physical activity, making fitness fun and keeping you motivated</p>
                   </div>
                 </div>
               </li>
               <li className="project c">
                 <div className="topBox">
-                  <h3 className="projectTitle">HKM Construction</h3>
+                  <h3 className="projectTitle">{`HKM Construction (In Progress)`}</h3>
                   <ul className="icons">
                     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="language icons"/></li>
                     <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="language icons"/></li>
@@ -87,7 +89,7 @@ function Projects() {
                   <p className="num">3</p>
                   <div className="descriptionBox">
                     <p className="projectDescription1">Personal project for my family business</p>
-                    <p className="projectDescription2">Project C description 2</p>
+                    <p className="projectDescription2">A website for HKM Construction LTD</p>
                   </div>
                 </div>
               </li>
