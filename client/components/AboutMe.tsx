@@ -2,7 +2,6 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/all"
 
-// gsap.registerPlugin(useGSAP)
 gsap.registerPlugin(ScrollTrigger)
 
 function AboutMe () {
@@ -17,7 +16,6 @@ function AboutMe () {
         pinnedContainer: '.aboutMeWrapper .textBox',
         start: '0% 50%',
         end: '40% 50%',
-        // markers: true,
         scrub: 1
       }
     })
@@ -47,7 +45,7 @@ function AboutMe () {
             </a>
           </li>
           <li className="resume">
-            <a href={"../../files/Resume - Seunghyun Min.pdf"} download={'Seunghyun Min Resume'}>Resume</a>
+            <a href={"../../files/Resume - Seunghyun Min.pdf"} download={'Seunghyun Min Resume'}>{`Resume`}</a>
           </li>
         </ul>
       </div>
