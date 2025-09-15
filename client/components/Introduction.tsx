@@ -23,7 +23,7 @@ function Introduction() {
 
   return ( 
     <>
-      <div id="section1" className="introWrapper">
+      <div id="introduction" className="introWrapper">
         <div className="introTitleBox">
           <span className="text">
             {`Min Seunghyun`}

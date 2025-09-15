@@ -23,7 +23,7 @@ function AboutMe () {
 
   return (
     <>
-      <div id="section3" className="aboutMeWrapper">
+      <div id="aboutme" className="aboutMeWrapper">
         <div>
           <span className="title">{`About me`}</span><br />
         </div>
